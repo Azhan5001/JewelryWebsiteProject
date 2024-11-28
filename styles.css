@@ -1,0 +1,233 @@
+@font-face {
+    font-family: 'UniversLT45LightRegular';
+    src: url('./UniversLT45LightRegular/UniversLTStd-Light.woff') format('woff'); /* Fixed syntax for format */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: 'UniversLT45LightRegular';
+}
+
+
+h2{
+    font-weight: lighter;
+}
+
+header{
+    width: 100%;
+    height: 9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f2f2f2;
+    position:absolute;
+    z-index: 10;
+    transition: transform 0.5s ease
+}
+header.scrolled{
+    background-color: white;
+    position: fixed;
+    min-height: 7rem;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.3);
+}
+header *{
+    background-color: #f2f2f2;
+}
+header *.scrolled{
+    background-color: white;
+}
+#header-content {
+    
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#header-content *{
+    display: flex;
+    justify-content: center;
+    margin: 0 1rem;
+    align-items: center;
+    font-family: UniversLT45LightRegular
+}
+#company-heading{
+    flex-direction: column;
+    margin: 0 auto;
+}
+#company-heading h1{
+    margin-top: 2rem;
+    font-size: 30px;
+    letter-spacing: 18px;
+}
+#company-heading h2{
+    font-size: 15px;
+    letter-spacing: 15px;
+}
+#company-heading *{
+    text-align: center;
+    letter-spacing: 9px;
+    margin: .5rem 0;
+}
+
+#leftside-header *{   
+    margin: 0 .1rem;
+}
+#leftside-header img{
+    margin: 0 .5rem;
+}
+.rightside-header{
+    margin-left: auto;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1.5rem;
+    
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav li{
+    margin: .1rem 1.5em;
+    list-style: none;
+    font-size: 15px;
+    font-family:'UniversalLight';
+    font-weight: lighter;
+}
+
+main{
+    background-color: #f2f2f2;
+    height: 80vh;
+}
+
+/* Hero block */
+#heroBlock{
+    object-fit: cover;
+}
+#heroBLock-image img{
+    height: 50rem;
+    width: 100%;
+    object-fit: contain; 
+}
+#heroBLock-image{
+    height: 90vh;
+    background-color: #f2f2f2;
+    overflow: hidden;
+}
+/* PERFECT STONE SECTION */
+
+#perfectStone-block{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    height: calc(100vh - 9rem);
+}
+#perfectStone-title{    
+}
+#perfectStone-image{
+    height: 40%;
+}
+#perfectStone-image img{
+    height: 100%;
+}
+#perfectStone-text{
+    text-align: center;
+    line-height: 35px;
+    font-size: 16px;
+}
+
+/* Promotion Block */
+
+#promotion-block{
+    height: 150vh;
+}
+#promotion-image{
+    height: 100%;
+    overflow: hidden;
+    clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%);
+}
+#promotion-image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* shopByCategory */
+
+#shopbyCategory-block{
+    height: 70vh;
+}
+#shopbyCategory-title{
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+#shopbyCategory-content{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+}
+.category-contents{
+    height:390px;
+    width: 380px;
+    background-color: #f2f2f2;
+}
+.category-contents img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* about us */
+
+#index-aboutus{
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-content: center;
+}
+#index-aboutus-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 3%;
+    font-size: 18px;
+}
+#index-aboutus-image{
+    margin: 50px 0 0 50px;
+}
+.andSymbol{
+    font-size: 90px;
+    font-weight: bold;
+}
+.sparkText{
+    font-size: 20px;
+}
+
+/* Explore Content */
+
+.exploreContents-right{
+    height: 85vh;
+    clip-path: polygon(100% 0, 0 15%, 0 85%, 100% 100%);
+    background-color: #f2f2f2;
+}
+.exploreContents-left{
+    height: 60vh;
+}
